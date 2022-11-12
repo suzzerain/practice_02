@@ -94,12 +94,6 @@ void printArray(int arr[])
     }
 }
 
-
-
-
-
-
-
 int main() {
 // Task 1. Filling array random numbers from -99 to 99
     const int arrSize = 100;
@@ -119,11 +113,6 @@ int main() {
         for (int i = 0; i < arrSize; i++) {
             arr[i] = -99 + (std::rand() % 199);
 
-//        arrSign = rand()%2;
-//        arr[i] = rand() % 100;
-//        if (arrSign ==1){
-//            arr[i] *= -1;
-//        }
 
         }
         memcpy(arrForSort, arr, sizeof(arrForSort));
@@ -474,7 +463,7 @@ int main() {
 
             }
             cout << "\n---------------------------------";
-            cout << "\narray before swap:";
+            cout << "\narray before swap:\n";
             for (int i = 0; i < arrSize; i++) {
                 if (i == inputFirstIndex || i == inputSecondIndex) {
                     cout << "<< " << arrForSort[i] << " << ";
@@ -490,7 +479,7 @@ int main() {
 
 
             cout << "\n---------------------------------";
-            cout << "\narray after swap:";
+            cout << "\narray after swap:\n";
             for (int i = 0; i < arrSize; i++) {
                 if (i == inputFirstIndex || i == inputSecondIndex) {
                     cout << "<< " << arrForSort[i] << " << ";
@@ -514,10 +503,3 @@ int main() {
 
     }
 }
-
-
-
-
-
-
-
